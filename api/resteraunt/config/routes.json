@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/resteraunts",
+      "handler": "Resteraunt.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/resteraunts/count",
+      "handler": "Resteraunt.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/resteraunts/:id",
+      "handler": "Resteraunt.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/resteraunts",
+      "handler": "Resteraunt.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/resteraunts/:id",
+      "handler": "Resteraunt.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/resteraunts/:id",
+      "handler": "Resteraunt.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

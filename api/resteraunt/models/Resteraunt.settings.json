@@ -1,0 +1,42 @@
+{
+  "connection": "default",
+  "collectionName": "resteraunts",
+  "info": {
+    "name": "resteraunt",
+    "description": "Resteraunt Listings"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "categories": {
+      "collection": "category",
+      "via": "resteraunts"
+    },
+    "resteraunt_hours": {
+      "group": "hours_of_operation",
+      "required": true,
+      "repeatable": true,
+      "type": "group"
+    }
+  }
+}
