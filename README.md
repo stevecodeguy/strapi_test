@@ -1,3 +1,3 @@
 # Strapi application
 
-A quick description of your strapi application
+A quick build of the Strapi tutorial.
